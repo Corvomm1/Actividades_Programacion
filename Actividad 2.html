@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<title>
+    Actividad 2: CLASSES
+</title>
+<body>
+    <h1>En esta actividad ocuparemos las classes para hacer diferentes juntaciones</h1>
+
+    <p id = "demo"></p>
+    <script>
+        //Declaracion de classes:
+        class Moni {
+            //Declaracion del constructor:
+            constructor (doll, eur, yen, cub, chil) {
+                this.doll = doll;
+                this.eur = eur;
+                this.yen = yen;
+                this.cub = cub;
+                this.chil = chil;
+            }
+            //Declaracion de lo que se va apresentar:
+            present () {
+                return "La moneda Mexicana en diferentes lugares, En Mexico un Dollar equivale a: " +this.doll+ 
+                " pesos Mexicanos, un Euro equivale a: " +this.eur+ " pesos Mexicanos, un Yen equivale a: " +this.yen+ " peso Mexicanos, "
+                +"un peso Cubano equivale a: " +this.cub+ " pesos Mexicanos, y un peso Chileno equivale a: " +this.chil+ " peso Mexicanos.";
+            }
+        }
+        myMoneda = new Moni ("18.91", "20.51", "0.17", "18.91", "0.024");
+
+        document.getElementById("demo").innerHTML = myMoneda.present();
+
+    </script>
+</body>
+</html>
